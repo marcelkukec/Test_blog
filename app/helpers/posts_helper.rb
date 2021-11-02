@@ -8,11 +8,14 @@ module PostsHelper
         end
     end
   end
+
   def display_show_post_links(post)
-    if current_user == post.user
-        link_to 'Edit', edit_post_path(post)
-        ' | '
-    end
-    link_to 'Back', posts_path
+    capture do
+      if current_user == post.user
+        concat link_to 'Edit', edit_post_path(post)
+        concat ' | '
+      end
+      concat link_to 'Back', posts_path
+      end
   end
 end
