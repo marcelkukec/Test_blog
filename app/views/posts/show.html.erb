@@ -10,7 +10,7 @@
 
 <p>
   <strong>Author:</strong>
-  <%= @post.user.email %>
+  <%= @post.user.name || 'Anonimen avtor' %>
 </p>
 
 <%= display_show_post_links(@post) %>
