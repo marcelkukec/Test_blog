@@ -1,0 +1,1 @@
+import Flatpickr from "stimulus-flatpickr";
