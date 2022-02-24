@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       post 'authenticate', to: 'authentication#authenticate'
-      resources :posts, only: [:index]
+      resources :posts, only: [:index, show]
     end
   end
 end
