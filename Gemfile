@@ -30,6 +30,10 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'devise' #Avtentikacija
 
+gem 'jwt' # Token za API
+
+gem 'simple_command' # auth za API
+
 gem 'commontator' #Engine za komentarje
 
 group :development, :test do
