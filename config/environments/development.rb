@@ -42,13 +42,13 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                 587,
-    domain:               'https://mk-blog-2021.herokuapp.com',
+    domain:               'mk-blog-2021.herokuapp.com',
     user_name:            'lasereye88@gmail.com',
     password:             'oovphmismtfoxxub',
     authentication:       'plain',
     enable_starttls_auto: true}
 
-  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.default_url_options = { host: 'mk-blog-2021.herokuapp.com' }
 
