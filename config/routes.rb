@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   root to:'posts#index'
 
+  default_url_options :host => "mk-blog-2021.herokuapp.com"
+
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       post 'authenticate', to: 'authentication#authenticate'
